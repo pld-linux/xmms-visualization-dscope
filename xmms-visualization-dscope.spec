@@ -12,7 +12,7 @@ BuildRequires:	gtk+-devel >= 1.2.2
 Requires:	xmms
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define         _xmms_plugin_dir        %(xmms-config --visualization-plugin-dirp)
+%define         _xmms_plugin_dir        %(xmms-config --visualization-plugin-dir)
 %define		_xmms_data_dir		%(xmms-config --data-dir)
 
 %description
