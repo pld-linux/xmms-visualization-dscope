@@ -7,10 +7,9 @@ License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://www.shell.linux.se/bm/f/dscope-v%{version}.tar.gz
 URL:		http://www.shell.linux.se/bm/index.php
-Requires:	xmms
 BuildRequires:	xmms-devel >= 1.2.3
-BuildRequires:	glib-devel >= 1.2.2
 BuildRequires:	gtk+-devel >= 1.2.2
+Requires:	xmms
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define         _xmms_plugin_dir        %(xmms-config --visualization-plugin-dirp)
