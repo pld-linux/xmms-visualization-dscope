@@ -2,7 +2,7 @@ Summary:	Dual Scope
 Summary(pl):	Podwójny Zakres
 Name:		xmms-visualization-dscope
 Version:	1.3.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://www.shell.linux.se/bm/f/dscope-v%{version}.tar.gz
