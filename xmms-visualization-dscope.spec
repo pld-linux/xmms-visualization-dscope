@@ -13,6 +13,8 @@ BuildRequires:	glib-devel >= 1.2.2
 BuildRequires:	gtk+-devel >= 1.2.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define         _xmms_plugin_dir        %(xmms-config --visualization-plugin-dirp)
+%define		_xmms_data_dir		%(xmms-config --data-dir)
 
 %description
 Dual Scope plugin for XMMS.
@@ -30,12 +32,12 @@ Plugin Podwójnego Zakresu.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT`xmms-config --visualization-plugin-dir` \
-	$RPM_BUILD_ROOT`xmms-config --data-dir`
+install -d $RPM_BUILD_ROOT%{_xmms_plugin_dir} \
+	$RPM_BUILD_ROOT%{_xmms_data_dir}
 
 %{__make} install \
-	INSTALL-DIR=$RPM_BUILD_ROOT`xmms-config --visualization-plugin-dir` \
-	XMMS_DATADIR=$RPM_BUILD_ROOT`xmms-config --data-dir`
+	INSTALL-DIR=$RPM_BUILD_ROOT%{_xmms_plugin_dir} \
+	XMMS_DATADIR=$RPM_BUILD_ROOT%{_xmms_data_dir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -43,5 +45,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Change* README
-%attr(755,root,root) %{_libdir}/xmms/*/*.so
-%{_datadir}/xmms/*
+%attr(755,root,root) %{_xmms_plugin_dir}/*.so
+%{_xmms_data_dir}/*
