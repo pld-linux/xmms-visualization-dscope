@@ -1,12 +1,12 @@
 Summary:	Dual Scope
 Summary(pl):	Podwójny Zakres
 Name:		xmms-visualization-dscope
-Version:	1.2
-Release:	2
+Version:	1.3.1
+Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
-Source0:	http://hem.passagen.se/joakime/dscope-%{version}.tar.gz
-URL:		http://hem.passagen.se/joakime/linuxapp.html
+Source0:	http://www.shell.linux.se/bm/f/dscope-v%{version}.tar.gz
+URL:		http://www.shell.linux.se/bm/index.php
 Requires:	xmms
 BuildRequires:	xmms-devel >= 1.2.3
 BuildRequires:	glib-devel >= 1.2.2
@@ -23,7 +23,7 @@ Dual Scope plugin for XMMS.
 Plugin Podwójnego Zakresu.
 
 %prep
-%setup -q -n dscope-%{version}
+%setup -q -n dscope-v%{version}
 
 %build
 %{__make} \
