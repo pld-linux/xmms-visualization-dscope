@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://www.shell.linux.se/bm/f/dscope-v%{version}.tar.gz
+# Source0-md5:	a883144570402cd67eb1090a4b9b529a
 URL:		http://www.shell.linux.se/bm/index.php
 BuildRequires:	xmms-devel >= 1.2.3
 Requires:	xmms
