@@ -5,8 +5,6 @@ Version:	1.2
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
-Group(de):	X11/Applikationen/Multimedia
-Group(pl):	X11/Aplikacje/Multimedia
 Source0:	http://hem.passagen.se/joakime/dscope-%{version}.tar.gz
 URL:		http://hem.passagen.se/joakime/linuxapp.html
 Requires:	xmms
