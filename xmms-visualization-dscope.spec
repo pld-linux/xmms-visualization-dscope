@@ -17,7 +17,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Dual Scope plugin for XMMS.
 
 %description -l pl
-Plugin Podwójnego Zakresu.
+Wtyczka Podwójnego Zakresu dla XMMS-a.
 
 %prep
 %setup -q -n dscope-v%{version}
