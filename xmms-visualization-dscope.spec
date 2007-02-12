@@ -1,5 +1,5 @@
 Summary:	Dual Scope
-Summary(pl.UTF-8):   Podwójny Zakres
+Summary(pl.UTF-8):	Podwójny Zakres
 Name:		xmms-visualization-dscope
 Version:	1.3.1
 Release:	3
