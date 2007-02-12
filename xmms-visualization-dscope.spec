@@ -1,5 +1,5 @@
 Summary:	Dual Scope
-Summary(pl):	Podwójny Zakres
+Summary(pl.UTF-8):   PodwÃ³jny Zakres
 Name:		xmms-visualization-dscope
 Version:	1.3.1
 Release:	3
@@ -16,8 +16,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Dual Scope plugin for XMMS.
 
-%description -l pl
-Wtyczka Podwójnego Zakresu dla XMMS-a.
+%description -l pl.UTF-8
+Wtyczka PodwÃ³jnego Zakresu dla XMMS-a.
 
 %prep
 %setup -q -n dscope-v%{version}
